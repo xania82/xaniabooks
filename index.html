@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xania Books &#8211; Stimulate Your Brain</title>
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+.header {
+  overflow: hidden;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+button {
+	transition: all 0.3s ease;
+}
+</style>
+
+</head>
+
+<body>
+<nav class="header">
+		<button onclick="loadPage('pages/welcome.html')">Home</button>
+		<button onclick="loadPage('pages/about.html')">About</button>
+		<button onclick="loadPage('pages/bookshop.html')">Bookshop</button>
+		<button onclick="loadPage('pages/authorpages.html')">Author pages</button>
+		<button onclick="loadPage('pages/stop-procrastination-right-now.html')">Stop procrastination</button>
+		<button onclick="loadPage('pages/testimonials-xb.html')">Testimonials</button>
+		<button onclick="loadPage('pages/free-books.html')">Free books</button>
+		<button onclick="loadPage('pages/privacy-policy.html')">Privacy policy</button>
+		<button onclick="loadPage('pages/contact.html')">Contact</button>
+</nav>
+
+<header>
+	<a href="index.html" title="Home" rel="home"><h2>Xania Books</h3></a>
+	<p>Stimulate Your Brain</p>
+</header>
+<div id="content"></div>
+
+<script>
+function loadPage(page) {
+    fetch(page)
+        .then(response => response.text())
+        .then(data => {
+			document.getElementById("content").innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById("content").innerHTML = "<p style='color:red;'>Error loading page.</p>";
+          console.error("Error:", error);
+        });
+    }
+	
+loadPage("pages/welcome.html");
+</script>
+
+<footer>
+<p>Stimulate Your Brain</p>
+<p>All rights reserved</p>
+</footer>
+
+</body>
+</html>
