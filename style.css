@@ -7,8 +7,8 @@
 
 nav{
 	//position: fixed;
-	display: inline-flex;
-	background: #1b1b1b;
+	//display: flex;
+	//background: #1b1b1b;
 	width: 100%;
 	padding: 10px 0;
 	z-index: 12;
@@ -23,7 +23,7 @@ nav{
 
 button {
 	color: #fff;
-	background: #000;
+	background: #212121;
 	border: none;
 	text-decoration: none;
 	font-size: 18px;
