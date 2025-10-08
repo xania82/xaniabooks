@@ -10,6 +10,12 @@ header .logo{
 	color: #fff;
 	font-size: 35px;
 	font-weight: 600;
+	
+}
+
+header .nav {
+	position: absolute;
+	left: 30%;
 }
 
 .head-title{
@@ -27,6 +33,18 @@ header div a {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: all 0.3s ease;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	//margin: 0;
+}
+
+main {
+	flex: 1;
+	padding-bottom: 50px;
 }
 
 button {
@@ -55,6 +73,7 @@ button:hover{
 
 footer {
 	text-align: center;
+	min-height: 50px;
 }
 
 html {

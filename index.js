@@ -23,12 +23,11 @@ async function includeHTML(id, file) {
 
 async function init() {
       await Promise.all([
-        includeHTML("header", "header.html")
-        //includeHTML("footer", "footer.html")
+        includeHTML("header", "header.html"),
+        includeHTML("footer", "footer.html")
       ]);
       document.body.classList.add("loaded"); // Reveal only when ready
 }
 
 includeHTML("header", "header.html");
-
-//includeHTML("header", "header.html");
+includeHTML("footer", "footer.html");
