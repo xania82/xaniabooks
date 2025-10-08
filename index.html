@@ -2,67 +2,30 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="pragma" content="no-cache">
 <title>Xania Books &#8211; Stimulate Your Brain</title>
-<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+<!--<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">-->
 <link rel="stylesheet" href="style.css">
-<style>
-.header {
-  overflow: hidden;
-  padding: 10px 10px;
-  margin: 0 auto;
-}
-
-a:link, a:visited {
-	text-decoration: none;
-}
-
-a:hover {
-  color: #ddd;
-}
-
-button {
-	transition: all 0.3s ease;
-}
-</style>
-
+<script src="index.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-<nav class="header">
-		<button onclick="loadPage('pages/welcome.html')">Home</button>
-		<button onclick="loadPage('pages/about.html')">About</button>
-		<button onclick="loadPage('pages/bookshop.html')">Bookshop</button>
-		<button onclick="loadPage('pages/authorpages.html')">Author pages</button>
-		<button onclick="loadPage('pages/stop-procrastination-right-now.html')">Stop procrastination</button>
-		<button onclick="loadPage('pages/testimonials-xb.html')">Testimonials</button>
-		<button onclick="loadPage('pages/free-books.html')">Free books</button>
-		<button onclick="loadPage('pages/privacy-policy.html')">Privacy policy</button>
-		<button onclick="loadPage('pages/contact.html')">Contact</button>
-</nav>
+<div id="header"></div>
 
-<header>
-	<a href="index.html" title="Home" rel="home"><h2>Xania Books</h3></a>
-	<p>Stimulate Your Brain</p>
-</header>
-<div id="content"></div>
+<main id="content">
 
-<script>
-function loadPage(page) {
-    fetch(page)
-        .then(response => response.text())
-        .then(data => {
-			document.getElementById("content").innerHTML = data;
-        })
-        .catch(error => {
-          document.getElementById("content").innerHTML = "<p style='color:red;'>Error loading page.</p>";
-          console.error("Error:", error);
-        });
-    }
+			<div class="page-header">
+			<h1 class="entry-title">Welcome</h1>		</div>
 	
-loadPage("pages/welcome.html");
-</script>
+	<div class="page-content">
+		<p>Welcome to Xania Books, the home of books to thrill, to improve yourself, to inform and, of course, to entertain.</p>
+<p>There is quite an eclectic mix on offer here, although there is a definite leaning towards self-improvement and development. Currently all books on offer here are available in paperback or kindle versions on Amazon or as an instant pdf download.</p>
+<p><img fetchpriority="high" decoding="async" src="wp-content/uploads/2020/11/Xania-Books-Photo-Collage-300x240.png" alt="" width="300" height="240" class="alignnone size-medium wp-image-93" srcset="wp-content/uploads/2020/11/Xania-Books-Photo-Collage-300x240.png 300w, wp-content/uploads/2020/11/Xania-Books-Photo-Collage-1024x819.png 1024w, wp-content/uploads/2020/11/Xania-Books-Photo-Collage-768x614.png 768w, wp-content/uploads/2020/11/Xania-Books-Photo-Collage-1536x1229.png 1536w, wp-content/uploads/2020/11/Xania-Books-Photo-Collage.png 2000w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>To look at all books on offer just click the Book Shop link at the top of the page.</p></div>
 
+</main>
+
+<hr>
 <footer>
 <p>Stimulate Your Brain</p>
 <p>All rights reserved</p>
